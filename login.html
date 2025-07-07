@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login - Web Assignment</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background: #f5f5f5;
+            font-family: Arial, sans-serif;
+        }
+        .login-container {
+            width: 360px;
+            margin: 80px auto;
+            background: #fff;
+            border-radius: 9px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+            padding: 36px 32px 28px 32px;
+        }
+        .login-container h2 {
+            margin: 0 0 22px 0;
+            text-align: center;
+            color: #222;
+        }
+        .form-group {
+            margin-bottom: 18px;
+        }
+        label {
+            display: block;
+            margin-bottom: 7px;
+            color: #333;
+            font-size: 15px;
+        }
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            font-size: 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            outline: none;
+            box-sizing: border-box;
+        }
+        .remember-me {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .remember-me input[type="checkbox"] {
+            margin-right: 8px;
+        }
+        .login-btn {
+            width: 100%;
+            padding: 11px 0;
+            background: #2862e9;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.18s;
+        }
+        .login-btn:hover {
+            background: #1747b0;
+        }
+        .login-links {
+            text-align: center;
+            margin-top: 18px;
+        }
+        .login-links a {
+            color: #2862e9;
+            text-decoration: none;
+            font-size: 14px;
+            margin: 0 6px;
+        }
+        .login-links a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login</h2>
+        <form>
+            <div class="form-group">
+                <label for="username">Username or Email</label>
+                <input type="text" id="username" name="username" autocomplete="username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" autocomplete="current-password" required>
+            </div>
+            <div class="remember-me">
+                <input type="checkbox" id="remember" name="remember">
+                <label for="remember" style="margin: 0; font-weight: normal; cursor: pointer;">Remember me</label>
+            </div>
+            <button type="submit" class="login-btn">Sign In</button>
+        </form>
+        <div class="login-links">
+            <a href="#">Forgot password?</a> |
+            <a href="#">Register</a>
+        </div>
+    </div>
+</body>
+</html>
